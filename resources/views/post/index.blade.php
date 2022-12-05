@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>POST TEST</title>
-</head>
-
-<body>
+@extends('layout.main')
+@section('judul')
+    halaman Post
+@endsection
+@section('contain')
     <h1>CRUD TEST POST</h1>
 
     <a href="/post/create"><button> Tambah</button></a>
     <br>
-    <table border="2">
+    <table class="table table-bordered">
         <tr>
             <th>no.</th>
             <th>judul</th>
@@ -47,6 +41,4 @@
 
         </tr>
     </table>
-</body>
-
-</html>
+@endsection
